@@ -11,19 +11,19 @@
     <script src="https://kit.fontawesome.com/135e9c29ad.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-light">
 
     <!-- navbar -->
 
     <nav class="navbar text-bg-primary">
 
-        <div class="container-fluid flex">
+        <div class="container-fluid">
             <div class="d-flex">
                 <a class="navbar-toggler" id="sidebar" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample"
                     role="button" aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon mt-2" id="sidebar"></span>
+                    <span class="navbar-toggler-icon" id="sidebar"></span>
                 </a>
-                <h1 class="navbar-brand text-light fs-2 ms-2">Pizza Runner</h1>
+                <div class="navbar-brand text-light ms-2"><strong>Pizza Runner</strong></div>
             </div>
 
         </div>
@@ -39,28 +39,37 @@
                 <div class="">
                     <ul style="list-style-type: none;" class="fs-4">
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class="me-3"><i class="fa-solid fa-table-columns  fs-3"></i></div>
-                                <div>Dashboard</div>
-                            </button>
+                            <form action='/admin/dashboard'>
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class="me-3"><i class="fa-solid fa-table-columns  fs-3"></i></div>
+                                    <div>Dashboard</div>
+                                </button>
+                            </form>
                         </li>
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class><i class="fa-solid fa-cart-shopping me-3 fs-4"></i></div>
-                                <div>Orders</div>
-                            </button>
+                            <form action= '/admin/orders'>
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class><i class="fa-solid fa-cart-shopping me-3 fs-4"></i></div>
+                                    <div>Orders</div>
+                                </button>
+                            </form>
                         </li>
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class="me-3"><i class="fa-solid fa-clipboard fs-3"></i></div>
-                                <div>Reports</div>
-                            </button>
+                            <form action='/admin/reports'>
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class="me-3"><i class="fa-solid fa-clipboard fs-3"></i></div>
+                                    <div>Reports</div>
+                                </button>
+                            </form>
                         </li>
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class="me-3"><i class="fa-solid fa-database fs-3"></i></div>
-                                <div>Data Mart</div>
-                            </button>
+                        <!-- insert xml dir -->
+                            <form action='/admin/orderhistory'> 
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class="me-3"><i class="fa-solid fa-database fs-3"></i></div>
+                                    <div>Full Order History</div>
+                                </button>
+                            </form> 
                         </li>
                     </ul>
                 </div>
@@ -70,16 +79,19 @@
 
     <!-- table -->
     <div class="container mt-2">
+        <form action="/admin/reports">
+            <button class="btn btn-primary"><strong>Return to Reports</strong></button>
+        </form>
         <h1>Daily Sales</h1>
 
-        <table class="table table-primary table-striped">
-            <thead class="fs-4">
+        <table class="table table-light table-striped">
+            <thead class="fs-4 table-primary border border-dark">
                 <tr>
                     <th scope="col">Date</th>
                     <th scope="col">Pizza Sold</th>
                 </tr>
             </thead>
-            <tbody class="fs-5">
+            <tbody class="fs-5 border border-dark">
             @foreach($sales as $sale)
                 <tr>
                     <th scope="row">{{$sale['Dates']}}</th>
@@ -88,9 +100,7 @@
             @endforeach
             </tbody>
         </table>
-        <form action="/admin/reports">
-            <button class="btn btn-link">Return to Reports</button>
-        </form>
+       
     </div>
 
 </body>

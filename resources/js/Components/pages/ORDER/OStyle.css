@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    color: black;
+}
+.Omain {
+    background-color: rgb(255, 255, 255);
+    
+    max-width: 100%;
+    width: 1920px;
+    height: 1080px;
+    
+}
+
+.Obody-container {
+    background-image: url("/resources/images/Order_BG.png");
+    background-size:fixed;
+    background-repeat: no-repeat;
+    
+    height: 1080px;
+}
+
+.image-container {
+  transition: transform 0.3s;
+}
+
+.image-container.grow {
+  transform: scale(1.1);
+}
+
+.Toppings p {
+    color: rgb(255, 243, 205);
+    text-shadow: #0c0c0c 4px 3px 8px; 
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    font-weight: 400;
+    
+    margin-top: 2%;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<row>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+</root>

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<row>
+<order_id>1</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>101</customer_id>
+<customer_name>Kyle Bello</customer_name>
+<customer_address>Tablon, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>2</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>103</customer_id>
+<customer_name>Kianna Bernal</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>6</runner_id>
+<runner_name>Estefan Escalante</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>3</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>102</customer_id>
+<customer_name>Kevin Pizarro</customer_name>
+<customer_address>Carmen, CDO</customer_address>
+<runner_id>3</runner_id>
+<runner_name>Brendan Urbina</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>4</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>107</customer_id>
+<customer_name>Tatiana Aquino</customer_name>
+<customer_address>Cugman, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>4</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>107</customer_id>
+<customer_name>Tatiana Aquino</customer_name>
+<customer_address>Cugman, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>5</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>108</customer_id>
+<customer_name>Luis Manrique</customer_name>
+<customer_address>Bulua, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>6</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>101</customer_id>
+<customer_name>Kyle Bello</customer_name>
+<customer_address>Tablon, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>7</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>103</customer_id>
+<customer_name>Kianna Bernal</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>7</order_id>
+<order_date>21-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>103</customer_id>
+<customer_name>Kianna Bernal</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>8</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>104</customer_id>
+<customer_name>Jasmine Ladera</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>9</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>101</customer_id>
+<customer_name>Kyle Bello</customer_name>
+<customer_address>Tablon, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>10</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>105</customer_id>
+<customer_name>Ashley Javier</customer_name>
+<customer_address>Bayabas, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>11</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>109</customer_id>
+<customer_name>Raymond Malapitan</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>6</runner_id>
+<runner_name>Estefan Escalante</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>11</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>109</customer_id>
+<customer_name>Raymond Malapitan</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>6</runner_id>
+<runner_name>Estefan Escalante</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>11</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>109</customer_id>
+<customer_name>Raymond Malapitan</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>6</runner_id>
+<runner_name>Estefan Escalante</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>12</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>110</customer_id>
+<customer_name>Pedro Cantillo</customer_name>
+<customer_address>Gusa, CDO</customer_address>
+<runner_id>3</runner_id>
+<runner_name>Brendan Urbina</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>13</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>111</customer_id>
+<customer_name>Koby Canencia</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>14</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>112</customer_id>
+<customer_name>Katrina Lindo</customer_name>
+<customer_address>Gusa, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>15</order_id>
+<order_date>22-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>104</customer_id>
+<customer_name>Jasmine Ladera</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>16</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>103</customer_id>
+<customer_name>Kianna Bernal</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>17</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>107</customer_id>
+<customer_name>Tatiana Aquino</customer_name>
+<customer_address>Cugman, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>18</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>102</customer_id>
+<customer_name>Kevin Pizarro</customer_name>
+<customer_address>Carmen, CDO</customer_address>
+<runner_id>3</runner_id>
+<runner_name>Brendan Urbina</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>18</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>102</customer_id>
+<customer_name>Kevin Pizarro</customer_name>
+<customer_address>Carmen, CDO</customer_address>
+<runner_id>3</runner_id>
+<runner_name>Brendan Urbina</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>19</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>106</customer_id>
+<customer_name>Ignacio Cervantes</customer_name>
+<customer_address>Kauswagan, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>20</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>111</customer_id>
+<customer_name>Koby Canencia</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>21</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>113</customer_id>
+<customer_name>Amaldo Balagtas</customer_name>
+<customer_address>Puntod, CDO</customer_address>
+<runner_id>6</runner_id>
+<runner_name>Estefan Escalante</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>22</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>109</customer_id>
+<customer_name>Raymond Malapitan</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>23</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>114</customer_id>
+<customer_name>Samson Manzano</customer_name>
+<customer_address>Cugman, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>24</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>105</customer_id>
+<customer_name>Ashley Javier</customer_name>
+<customer_address>Bayabas, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>24</order_id>
+<order_date>23-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>105</customer_id>
+<customer_name>Ashley Javier</customer_name>
+<customer_address>Bayabas, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>25</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>115</customer_id>
+<customer_name>Aurelio Hernandez</customer_name>
+<customer_address>Puntod, CDO</customer_address>
+<runner_id>3</runner_id>
+<runner_name>Brendan Urbina</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>26</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>116</customer_id>
+<customer_name>Jonathan Chavez</customer_name>
+<customer_address>Gusa, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>27</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>112</customer_id>
+<customer_name>Katrina Lindo</customer_name>
+<customer_address>Gusa, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>28</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>117</customer_id>
+<customer_name>Anton Alba</customer_name>
+<customer_address>Carmen, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>28</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>117</customer_id>
+<customer_name>Anton Alba</customer_name>
+<customer_address>Carmen, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>28</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>117</customer_id>
+<customer_name>Anton Alba</customer_name>
+<customer_address>Carmen, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>29</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>103</customer_id>
+<customer_name>Kianna Bernal</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>30</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>104</customer_id>
+<customer_name>Jasmine Ladera</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>3</runner_id>
+<runner_name>Brendan Urbina</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>31</order_id>
+<order_date>24-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>118</customer_id>
+<customer_name>Milagros Cuevas</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>32</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>119</customer_id>
+<customer_name>Zander Domingo</customer_name>
+<customer_address>Kauswagan, CDO</customer_address>
+<runner_id>6</runner_id>
+<runner_name>Estefan Escalante</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>33</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation>Cancelled</cancellation>
+<customer_id>120</customer_id>
+<customer_name>Kassie Blanco</customer_name>
+<customer_address>Cugman, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>34</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>104</customer_id>
+<customer_name>Jasmine Ladera</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>34</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>104</customer_id>
+<customer_name>Jasmine Ladera</customer_name>
+<customer_address>Patag, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>35</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>110</customer_id>
+<customer_name>Pedro Cantillo</customer_name>
+<customer_address>Gusa, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>36</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>113</customer_id>
+<customer_name>Amaldo Balagtas</customer_name>
+<customer_address>Puntod, CDO</customer_address>
+<runner_id>3</runner_id>
+<runner_name>Brendan Urbina</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>37</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>103</customer_id>
+<customer_name>Kianna Bernal</customer_name>
+<customer_address>Lapasan, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>38</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>101</customer_id>
+<customer_name>Kyle Bello</customer_name>
+<customer_address>Tablon, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>38</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>101</customer_id>
+<customer_name>Kyle Bello</customer_name>
+<customer_address>Tablon, CDO</customer_address>
+<runner_id>2</runner_id>
+<runner_name>Romeo Bonachita</runner_name>
+<pizza_id>3</pizza_id>
+<pizza_name>Beef-Beef-Beef</pizza_name>
+</row>
+<row>
+<order_id>39</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>121</customer_id>
+<customer_name>Tyrell Gamulo</customer_name>
+<customer_address>Gusa, CDO</customer_address>
+<runner_id>4</runner_id>
+<runner_name>Uriel Salvador</runner_name>
+<pizza_id>2</pizza_id>
+<pizza_name>Vegetarian</pizza_name>
+</row>
+<row>
+<order_id>40</order_id>
+<order_date>25-05-2023</order_date>
+<cancellation></cancellation>
+<customer_id>117</customer_id>
+<customer_name>Anton Alba</customer_name>
+<customer_address>Carmen, CDO</customer_address>
+<runner_id>1</runner_id>
+<runner_name>Tommy Villamor</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+<row>
+<order_id>41</order_id>
+<order_date>14-06-2023</order_date>
+<cancellation></cancellation>
+<customer_id>122</customer_id>
+<customer_name>Charlie Sambalod</customer_name>
+<customer_address>Puerto, CDO</customer_address>
+<runner_id>5</runner_id>
+<runner_name>Theodore Galang</runner_name>
+<pizza_id>1</pizza_id>
+<pizza_name>Meat Lover</pizza_name>
+</row>
+</root>

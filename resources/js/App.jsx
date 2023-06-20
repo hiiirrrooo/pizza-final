@@ -4,10 +4,14 @@ import React from  'react'
 import ReactDOM from 'react-dom/client';        
 import { BrowserRouter } from "react-router-dom"
 
-import Main from './Pages/Main';
+import Main from './Main';
 
 ReactDOM.createRoot(document.getElementById('app')).render(     
-    <BrowserRouter>
+    <React.StrictMode>
         <Main />
-    </BrowserRouter>
+    </React.StrictMode>
 );
+
+
+
+  

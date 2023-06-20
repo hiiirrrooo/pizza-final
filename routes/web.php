@@ -29,6 +29,7 @@ Route::post('/submit', [OrderController::class, 'store']);
 Route::get('/admin/dashboard', [DashboardController::class, 'show']);
 Route::get('/admin/orders', [DashboardController::class, 'showOrders']);
 Route::get('/admin/reports', [DashboardController::class, 'showReports']);
+Route::get('/admin/orderhistory', [DashboardController:: class, 'showHistory']);
 
 Route::get('/admin/orders/successful', [SuccessfulOrdersController::class, 'show']);
 

@@ -18,4 +18,12 @@ class DashboardController extends Controller
     public function showReports(){
         return view('reports');
     }
+
+    public function showHistory(){
+
+        $data = simplexml_load_file(resource_path('/xml-loading/orderhistory.xml'))
+        or die("Error: Cannot create object");
+
+        return view('orderhistory',['xml'=>$data]);
+    }
 }

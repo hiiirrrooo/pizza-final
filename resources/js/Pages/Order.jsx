@@ -35,15 +35,6 @@ const Index = () => {
         
       }))
     }
-    const clearInput = (e) => {
-      setInputs({
-        custname: "",
-        custaddr: "",
-        pizza_id: "",
-        exclusion: "",
-        extras: ""
-      });
-    }
 
     return (
       <Box spacing={2} direction="column">
@@ -104,7 +95,6 @@ const Index = () => {
           
         <Button type="submit">Submit</Button>
         </form>
-        <Button onClick={()=>backButton()}>Back</Button>
       </Box>
     );
   }

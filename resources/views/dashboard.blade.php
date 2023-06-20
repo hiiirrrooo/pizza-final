@@ -1,31 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-    </head>
-    <body>
-        <div>
-            <form action='/admin/sales'>
-                <input type='submit' value='Daily Sales'>
-            </form>
-            <form action='/admin/pizza'>
-                <input type='submit' value='Pizza Count'>
-            </form>
-            <form action='/admin/unique'>
-                <input type='submit' value='Unique Customers'>
-            </form>
-            <form action='/admin/successful'>
-                <input type='submit' value='Successful Orders'>
-            </form>
-            <form action='/admin/cancelled'>
-                <input type='submit' value='Cancelled Orders'>
-            </form>
-        </div>
-    </body>
-</html> -->
 <!doctype html>
 <html lang="en">
 
@@ -39,21 +11,26 @@
     <script src="https://kit.fontawesome.com/135e9c29ad.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-light">
 
     <!-- navbar -->
 
-    <nav class="navbar text-bg-primary">
+    <nav class="navbar text-bg-primary fixed-top">
 
-        <div class="container-fluid flex">
+        <div class="container-fluid d-flex">
             <div class="d-flex">
                 <a class="navbar-toggler" id="sidebar" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample"
                     role="button" aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon mt-2" id="sidebar"></span>
+                    <span class="navbar-toggler-icon" id="sidebar"></span>
                 </a>
-                <h1 class="navbar-brand text-light fs-2 ms-2">Pizza Runner</h1>
+                <div class="navbar-brand text-light ms-2"><strong>Pizza Runner</strong></div>
             </div>
-
+            <div class="d-flex ">
+                <form action="/">
+                    <button type="submit" class="btn btn-primary"><strong>Sign Out</strong>
+                        </button>
+                </form>
+            </div>
         </div>
 
 
@@ -67,28 +44,37 @@
                 <div class="">
                     <ul style="list-style-type: none;" class="fs-4">
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class="me-3"><i class="fa-solid fa-table-columns  fs-3"></i></div>
-                                <div>Dashboard</div>
-                            </button>
+                            <form action='/admin/dashboard'>
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class="me-3"><i class="fa-solid fa-table-columns  fs-3"></i></div>
+                                    <div>Dashboard</div>
+                                </button>
+                            </form>
                         </li>
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class><i class="fa-solid fa-cart-shopping me-3 fs-4"></i></div>
-                                <div>Orders</div>
-                            </button>
+                            <form action= '/admin/orders'>
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class><i class="fa-solid fa-cart-shopping me-3 fs-4"></i></div>
+                                    <div>Orders</div>
+                                </button>
+                            </form>
                         </li>
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class="me-3"><i class="fa-solid fa-clipboard fs-3"></i></div>
-                                <div>Reports</div>
-                            </button>
+                            <form action='/admin/reports'>
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class="me-3"><i class="fa-solid fa-clipboard fs-3"></i></div>
+                                    <div>Reports</div>
+                                </button>
+                            </form>
                         </li>
                         <li class="mb-3">
-                            <button style="border:none; background-color: white;" class="d-flex">
-                                <div class="me-3"><i class="fa-solid fa-database fs-3"></i></div>
-                                <div>Data Mart</div>
-                            </button>
+                        <!-- insert xml dir -->
+                            <form action='/admin/orderhistory'> 
+                                <button style="border:none; background-color: white;" class="d-flex">
+                                    <div class="me-3"><i class="fa-solid fa-database fs-3"></i></div>
+                                    <div>Full Order History</div>
+                                </button>
+                            </form> 
                         </li>
                     </ul>
                 </div>
@@ -98,31 +84,41 @@
 
     <!-- main -->
     <div class="container px-4 text-center">
-        <h1 class="mb-5 mt-2">Welcome Admin!</h1>
+        <h1 class="mb-5 mt-2"><strong>Welcome Admin!</strong></h1>
+        
         <div class="row d-flex justify-content-center gx-5">
-            <form action='/admin/orders'>
-                <button style="border: none; background-color: white;" class="col-3">
-                    <div style="height:200px;" class="d-flex flex-column align-items-center text-bg-primary p-3">
-                        <div style="font-size: 75px;"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class = "col-3" >
+                <form style = "height: 200px;" class = "d-flex justify-content-center text-bg-primary" action='/admin/orders'>
+                    <button style="border: none; background-color: white; "  class="d-flex flex-column align-items-center text-bg-primary p-3">
+                        <div style="font-size: 75px;" class = "mt-3"><i class="fa-solid fa-cart-shopping"></i></div>
                         <div class="mt-2">ORDERS</div>
-                    </div>
-                </button>
-            </form>
-            <form action='/admin/reports'>
-                <button style="border: none; background-color: white;" class="col-3">
-                    <div style="height:200px;" class="d-flex flex-column align-items-center text-bg-primary p-3">
-                        <div style="font-size: 75px;"><i class="fa-solid fa-clipboard"></i></div>
-                        <div class="mt-2">REPORTS</div>
-                    </div>
-                </button>
-            </form>
+    
+                    </button>
+                  
+                </form>
+            </div>
 
-            <button style="border: none; background-color: white;" class="col-3">
-                <div style="height:200px;" class="d-flex flex-column align-items-center text-bg-primary p-3">
-                    <div style="font-size: 75px;"><i class="fa-solid fa-database"></i></div>
-                    <div>DATA MART</div>
-                </div>
-            </button>
+            <div class="col-3">
+                <form style = "height: 200px;" class = "d-flex justify-content-center  text-bg-primary" action='/admin/reports'>
+                    <button style="border: none; background-color: white;" class="d-flex flex-column align-items-center text-bg-primary p-3">
+
+                        <div style="font-size: 75px;" class = "mt-3"><i class="fa-solid fa-clipboard"></i></div>
+                        <div class="mt-2">REPORTS</div>
+
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-3">
+            <form style = "height: 200px;" class = "d-flex justify-content-center  text-bg-primary" action='/admin/orderhistory'>
+                <button style="border: none; background-color: white;" class="d-flex flex-column align-items-center text-bg-primary p-3">
+                        <div style="font-size: 75px;" class = "mt-3"><i class="fa-solid fa-database"></i></div>
+                        <!-- insert xml dir -->
+                        <div class="mt-2">FULL ORDER HISTORY</div>
+                        
+                </button>
+            </form>
+            </div>
         </div>
     </div>
 
