@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en">
-
+ <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Orders</title>
+    <title>Running Orders</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/135e9c29ad.js" crossorigin="anonymous"></script>
 </head>
@@ -77,47 +76,56 @@
         </div>
     </nav>
 
-    <!-- main -->
-    
-    <div class="container-md mt-2 mx-5">
-        <form class = "mb-2" action="/admin/dashboard">
-            <button class="btn btn-primary"><strong>Return to Dashboard</strong></button>
-        </form>
-        <h1>Orders</h1>
-        <table class="table table-light fs-4">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Table Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <form action="/admin/orders/running">
-                        <td>
-                            <button style="border: none; background-color: white; color: blue;">Running Orders</button>
-                        </td>
-                    </form>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <form action="/admin/orders/successful">
-                        <td>
-                            <button style="border: none; background-color: white; color: blue;">Succesful Orders</button>
-                        </td>
-                    </form>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <form action="/admin/orders/cancelled">
-                        <td>
-                            <button style="border: none; background-color: white; color: blue;">Cancelled Orders</button>
-                        </td>
-                    </form>
-                </tr>
-            </tbody>
+    <!-- table -->
+    <div class="container-md mt-2">
+        <div>
+            <form action="/admin/orders">
+                    <button class="btn btn-primary"><strong>Return to Orders</strong></button>
+                </form>
+                <h1>Running Orders</h1>
+                <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
 
-        </table>
-       
+                <table class="table table-light table-striped">
+                    <thead class="table-primary fs-5 border border-dark">
+                        <tr>
+                            <th scope="col">Order ID</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Pizza Name</th>
+                            <th scope="col">Order Date</th>
+                            <!-- <th scope="col">Cancellation</th>
+                            <th scope="col">Pickup Time</th> -->
+                            <th scope="col" colspan=2>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="fs-5 border border-dark">
+                    @foreach($running as $run)
+
+
+                    <tr>
+                        <th scope="row">{{$run['order_id']}}</th>
+                        <td>{{$run['customer_name']}}</td>
+                        <td>{{$run['pizza_name']}}</td>
+                        <td>{{$run['order_date']}}</td>
+                        <!-- <td>{{$run['cancellation']}}</td>
+                        <td>{{$run['pickup_time']}}</td> -->
+                        <td>
+                            <form action="/admin/orders/running/done/{{$run->order_id}}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-success">Done</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="/admin/orders/running/cancel/{{$run->order_id}}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-danger">Cancel</button>
+                            </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+        </div>
     </div>
+      
+</body>
+</html>

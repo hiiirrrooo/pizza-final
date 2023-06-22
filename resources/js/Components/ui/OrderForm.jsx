@@ -24,7 +24,8 @@ const OrderForm = () => {
     custname: "",
     custaddr: "",
     exclusion: "",
-    extras: ""
+    extras: "",
+    howmany: ""
   });
 
   useEffect(() => {
@@ -39,7 +40,7 @@ const OrderForm = () => {
       setWordList([
         'TOPPINGS',
           '4. Cheese', '6. Mushroom', '7. Onion',
-          '9. Pep', '9. Peppers', '11. Tomatoes', '12. Tomato Sauce'
+          '9. Pepperoni', '9. Peppers', '11. Tomatoes', '12. Tomato Sauce'
       ]);
     } else if (selectedValue === '3') {
       setWordList([
@@ -80,6 +81,7 @@ const OrderForm = () => {
       [e.target.name] : e.target.value
       
     }))
+    console.log(inputs);
   }
 
   const test = (inputs) => {
@@ -121,6 +123,14 @@ const OrderForm = () => {
             variant="outlined"
             value={inputs.custaddr}
             onChange={handleInputChanges} />
+
+          <TextField 
+            name="howmany"
+            id="howmany"
+            label="Quantity" 
+            variant="outlined"
+            value={inputs.howmany}
+            onChange={handleInputChanges}  />
           
           <Box sx={{ minWidth: 120, py: 1 }}>
             <FormControl fullWidth>
@@ -149,7 +159,6 @@ const OrderForm = () => {
           <TextField 
             name="exclusion"
             id="exclusion"
-            required 
             label="Toppings Exclusiions" 
             variant="outlined"
             value={inputs.exclusion}
@@ -157,15 +166,14 @@ const OrderForm = () => {
 
           <TextField 
             name="extras"
-            id="extras"
-            required 
+            id="extras" 
             label="Toppings Extras" 
             variant="outlined" 
             value={inputs.extras}
             onChange={handleInputChanges} />
 
         <Button_OrderForm />
-        </Box>
+        </Box>  
       </form>
       <Box
         width={250}

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('pizza_id');
             $table->text('exclusion');
             $table->text('extras');
+            $table->integer('howmany');
             $table->timestamps();
         });
     }

@@ -14,6 +14,7 @@ class OrderController extends Controller
         $order->pizza_id = $request->input('pizza_id');
         $order->exclusion = $request->input('exclusion');
         $order->extras = $request->input('extras');
+        $order->howmany = $request->input('howmany');
         $order->save();
         
         return redirect('/');

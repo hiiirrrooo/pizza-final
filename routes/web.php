@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DailySalesController;
 use App\Http\Controllers\PizzaCountsController;
 use App\Http\Controllers\UniqueCustomersController;
+use App\Http\Controllers\RunningOrdersController;
 use App\Http\Controllers\SuccessfulOrdersController;
 use App\Http\Controllers\CancelledOrdersController;
 
@@ -30,6 +31,10 @@ Route::get('/admin/dashboard', [DashboardController::class, 'show']);
 Route::get('/admin/orders', [DashboardController::class, 'showOrders']);
 Route::get('/admin/reports', [DashboardController::class, 'showReports']);
 Route::get('/admin/orderhistory', [DashboardController:: class, 'showHistory']);
+
+Route::get('/admin/orders/running', [RunningOrdersController::class, 'show']);
+Route::post('/admin/orders/running/done/{order_id}', [RunningOrdersController::class, 'done']);
+Route::post('/admin/orders/running/cancel/{order_id}', [RunningOrdersController::class, 'cancel']);
 
 Route::get('/admin/orders/successful', [SuccessfulOrdersController::class, 'show']);
 
